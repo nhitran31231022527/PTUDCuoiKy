@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PawJoy Blog - Trang 2</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['"Plus Jakarta Sans"', "sans-serif"],
+              serif: ['"Playfair Display"', "serif"],
+            },
+            colors: {
+              brand: "#D97706",
+              brandLight: "#FFFBEB",
+              brandDark: "#92400E",
+              accent: "#059669",
+              dark: "#3F2212",
+              slate: "#1F2937",
+              cream: "#FDFBF7",
+              paper: "#F3F4F6",
+            },
+            boxShadow: {
+              soft: "0 20px 40px -15px rgba(0, 0, 0, 0.05)",
+              card: "0 10px 30px -5px rgba(0, 0, 0, 0.1)",
+            },
+          },
+        },
+      };
+    </script>
+    <link rel="stylesheet" href="style/blog.css">
+</head>
+<body class="font-sans text-dark bg-cream antialiased selection:bg-brand selection:text-white flex flex-col min-h-screen">
+
+    <header id="main-header" class="fixed w-full z-50 bg-cream/80 backdrop-blur-md border-b border-brand/5 transition-all duration-300">
+      <div class="container mx-auto px-6 h-20 flex justify-between items-center">
+        <a href="index.html" class="flex items-center gap-3 group">
+          <img src="assets/images/LOGO PAWJOY.png" alt="PawJoy Logo" class="h-10 object-contain">
+        </a>
+        <nav class="hidden md:flex items-center space-x-8 font-medium text-sm tracking-wide">
+          <a href="index.html" class="text-gray-600 hover:text-brand transition duration-300">Trang chủ</a>
+          <a href="#" class="text-gray-600 hover:text-brand transition duration-300">Về chúng tôi</a>
+          <a href="#" class="text-gray-600 hover:text-brand transition duration-300">Dịch vụ</a>
+          <a href="blog.html" class="text-brand font-bold border-b-2 border-brand">Blog</a>
+        </nav>
+        <div class="hidden md:flex gap-5 items-center">
+          <button class="w-9 h-9 flex items-center justify-center rounded-full text-dark hover:text-brand hover:bg-brand/10 transition"><i class="fas fa-search text-lg"></i></button>
+          <a href="#" class="w-9 h-9 flex items-center justify-center rounded-full text-dark hover:text-brand hover:bg-brand/10 transition"><i class="far fa-user text-lg"></i></a>
+          <a href="#" class="ml-2 px-6 py-2.5 rounded-full bg-dark text-white text-sm font-bold shadow-lg hover:bg-brand hover:shadow-brand/30 transition transform hover:-translate-y-0.5 flex items-center gap-2">Đặt lịch ngay <i class="fas fa-arrow-right text-xs"></i></a>
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-grow pt-28 pb-12">
+      <section class="container mx-auto px-6 mb-12 text-center">
+          <span class="text-brand font-bold text-xs uppercase tracking-widest mb-3 block">Cẩm nang kiến thức</span>
+          <h1 class="font-serif text-4xl md:text-5xl text-dark font-medium leading-tight">
+            Chăm Sóc Boss <br /><span class="italic text-brand">Đúng Cách.</span>
+          </h1>
+      </section>
+
+      <section class="container mx-auto px-6">
+        <div class="flex flex-col lg:flex-row gap-12">
+            
+            <aside class="lg:w-1/3 space-y-8 order-2 lg:order-1 sidebar-sticky h-fit">
+                
+                <div class="bg-white p-6 rounded-3xl shadow-card border border-gray-100">
+                    <h3 class="font-serif text-xl font-bold mb-4 border-l-4 border-brand pl-3">Tìm kiếm</h3>
+                    <div class="relative">
+                        <input type="text" placeholder="Tìm bài viết..." class="w-full bg-paper border border-transparent rounded-xl py-3 pl-4 pr-10 focus:outline-none focus:border-brand focus:bg-white transition font-bold text-sm">
+                        <button class="absolute right-3 top-3 text-gray-400 hover:text-brand"><i class="fas fa-search"></i></button>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl shadow-card border border-gray-100">
+                    <h3 class="font-serif text-xl font-bold mb-4 border-l-4 border-brand pl-3">Chủ đề</h3>
+                    <ul class="space-y-1">
+                        <li><a href="#" class="category-item flex justify-between items-center text-gray-600 hover:text-brand font-medium py-2 transition group"><span><i class="fas fa-chevron-right text-xs mr-2 text-gray-300 group-hover:text-brand"></i> Sức khỏe thú cưng</span><span class="bg-gray-100 text-xs px-2 py-1 rounded-md text-gray-500 group-hover:bg-brand group-hover:text-white transition">02</span></a></li>
+                        <li><a href="#" class="category-item flex justify-between items-center text-gray-600 hover:text-brand font-medium py-2 transition group"><span><i class="fas fa-chevron-right text-xs mr-2 text-gray-300 group-hover:text-brand"></i> Dinh dưỡng</span><span class="bg-gray-100 text-xs px-2 py-1 rounded-md text-gray-500 group-hover:bg-brand group-hover:text-white transition">03</span></a></li>
+                        <li><a href="#" class="category-item flex justify-between items-center text-gray-600 hover:text-brand font-medium py-2 transition group"><span><i class="fas fa-chevron-right text-xs mr-2 text-gray-300 group-hover:text-brand"></i> Spa & Grooming</span><span class="bg-gray-100 text-xs px-2 py-1 rounded-md text-gray-500 group-hover:bg-brand group-hover:text-white transition">01</span></a></li>
+                        <li><a href="#" class="category-item flex justify-between items-center text-gray-600 hover:text-brand font-medium py-2 transition group"><span><i class="fas fa-chevron-right text-xs mr-2 text-gray-300 group-hover:text-brand"></i> Lifestyle</span><span class="bg-gray-100 text-xs px-2 py-1 rounded-md text-gray-500 group-hover:bg-brand group-hover:text-white transition">03</span></a></li>
+                    </ul>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl shadow-card border border-gray-100">
+                    <h3 class="font-serif text-xl font-bold mb-6 border-l-4 border-brand pl-3">Bài viết mới</h3>
+                    <div class="space-y-5">
+                        <a href="blog-detail.html" class="flex gap-4 group">
+                            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=200" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-dark leading-snug group-hover:text-brand transition line-clamp-2">5 Dấu hiệu Boss cần đi Spa gấp</h4>
+                                <span class="text-xs text-gray-400 mt-1 block"><i class="far fa-clock mr-1"></i> 10/12/2025</span>
+                            </div>
+                        </a>
+                        <a href="blog-detail.html" class="flex gap-4 group">
+                            <div class="w-20 h-20 rounded-xl overflow-hidden flex-shrink-0">
+                                <img src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?q=80&w=200" class="w-full h-full object-cover transition duration-500 group-hover:scale-110">
+                            </div>
+                            <div>
+                                <h4 class="font-bold text-sm text-dark leading-snug group-hover:text-brand transition line-clamp-2">Pate tươi vs Thức ăn hạt?</h4>
+                                <span class="text-xs text-gray-400 mt-1 block"><i class="far fa-clock mr-1"></i> 09/12/2025</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="bg-white p-6 rounded-3xl shadow-card border border-gray-100">
+                    <h3 class="font-serif text-xl font-bold mb-4 border-l-4 border-brand pl-3">Từ khóa</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <a href="#" class="px-3 py-1.5 bg-gray-100 rounded-lg text-xs font-bold text-gray-600 hover:bg-brand hover:text-white transition">#SpaChoMeo</a>
+                        <a href="#" class="px-3 py-1.5 bg-gray-100 rounded-lg text-xs font-bold text-gray-600 hover:bg-brand hover:text-white transition">#DinhDuong</a>
+                        <a href="#" class="px-3 py-1.5 bg-gray-100 rounded-lg text-xs font-bold text-gray-600 hover:bg-brand hover:text-white transition">#Review</a>
+                    </div>
+                </div>
+            </aside>
+
+            <div class="lg:w-2/3 order-1 lg:order-2">
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-12">
+                    
+                    <article class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-2xl transition duration-500 group border border-gray-100 flex flex-col h-full">
+                        <div class="relative h-56 overflow-hidden">
+                            <a href="blog-detail.html" class="block w-full h-full">
+                                <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?q=80&w=2069" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+                            </a>
+                            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-brand">Lifestyle</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 text-xs text-gray-400 mb-3">
+                                <span><i class="far fa-user"></i> Admin</span>
+                                <span>•</span>
+                                <span>15 phút đọc</span>
+                            </div>
+                            <h3 class="font-serif text-lg font-bold text-dark mb-3 group-hover:text-brand transition leading-snug">
+                                <a href="blog-detail.html">Lợi ích bất ngờ của việc dắt chó đi dạo mỗi ngày</a>
+                            </h3>
+                            <p class="text-gray-500 text-sm mb-4 line-clamp-3 flex-grow">
+                                Không chỉ giúp cún cưng giải tỏa năng lượng, đi dạo còn gắn kết tình cảm giữa Sen và Boss...
+                            </p>
+                            <a href="blog-detail.html" class="text-sm font-bold text-dark hover:text-brand transition mt-auto inline-flex items-center gap-1">
+                                Xem chi tiết <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-2xl transition duration-500 group border border-gray-100 flex flex-col h-full">
+                        <div class="relative h-56 overflow-hidden">
+                            <a href="blog-detail.html" class="block w-full h-full">
+                                <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?q=80&w=2069" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+                            </a>
+                            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-accent">Sức khỏe</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 text-xs text-gray-400 mb-3">
+                                <span><i class="far fa-user"></i> Dr. Vet</span>
+                                <span>•</span>
+                                <span>8 phút đọc</span>
+                            </div>
+                            <h3 class="font-serif text-lg font-bold text-dark mb-3 group-hover:text-brand transition leading-snug">
+                                <a href="blog-detail.html">Mèo bị nôn: Khi nào là bình thường, khi nào cần gặp bác sĩ?</a>
+                            </h3>
+                            <p class="text-gray-500 text-sm mb-4 line-clamp-3 flex-grow">
+                                Phân biệt nôn búi lông sinh lý và nôn do bệnh lý để có hướng xử lý kịp thời cho mèo cưng.
+                            </p>
+                            <a href="blog-detail.html" class="text-sm font-bold text-dark hover:text-brand transition mt-auto inline-flex items-center gap-1">
+                                Xem chi tiết <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-2xl transition duration-500 group border border-gray-100 flex flex-col h-full">
+                        <div class="relative h-56 overflow-hidden">
+                            <a href="blog-detail.html" class="block w-full h-full">
+                                <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?q=80&w=2069" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+                            </a>
+                            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-brand">Dinh dưỡng</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 text-xs text-gray-400 mb-3">
+                                <span><i class="far fa-user"></i> Chef Paw</span>
+                                <span>•</span>
+                                <span>20 phút đọc</span>
+                            </div>
+                            <h3 class="font-serif text-lg font-bold text-dark mb-3 group-hover:text-brand transition leading-snug">
+                                <a href="blog-detail.html">Công thức tự làm bánh thưởng (Treats) cho cún yêu tại nhà</a>
+                            </h3>
+                            <p class="text-gray-500 text-sm mb-4 line-clamp-3 flex-grow">
+                                Tổng hợp 3 công thức làm bánh thưởng đơn giản từ ức gà, bí đỏ và yến mạch, đảm bảo an toàn.
+                            </p>
+                            <a href="blog-detail.html" class="text-sm font-bold text-dark hover:text-brand transition mt-auto inline-flex items-center gap-1">
+                                Xem chi tiết <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </article>
+
+                    <article class="bg-white rounded-3xl overflow-hidden shadow-card hover:shadow-2xl transition duration-500 group border border-gray-100 flex flex-col h-full">
+                        <div class="relative h-56 overflow-hidden">
+                            <a href="blog-detail.html" class="block w-full h-full">
+                                <img src="https://images.unsplash.com/photo-1534361960057-19889db9621e?q=80&w=2069" class="w-full h-full object-cover transition duration-700 group-hover:scale-110" />
+                            </a>
+                            <span class="absolute top-4 left-4 bg-white/90 backdrop-blur px-3 py-1 rounded-full text-xs font-bold text-blue-500">Review</span>
+                        </div>
+                        <div class="p-6 flex flex-col flex-grow">
+                            <div class="flex items-center gap-2 text-xs text-gray-400 mb-3">
+                                <span><i class="far fa-user"></i> Reviewer</span>
+                                <span>•</span>
+                                <span>12 phút đọc</span>
+                            </div>
+                            <h3 class="font-serif text-lg font-bold text-dark mb-3 group-hover:text-brand transition leading-snug">
+                                <a href="blog-detail.html">Review Top 3 loại các vệ sinh cho mèo khử mùi tốt nhất 2025</a>
+                            </h3>
+                            <p class="text-gray-500 text-sm mb-4 line-clamp-3 flex-grow">
+                                So sánh ưu nhược điểm của cát đậu nành, cát đất sét và cát gỗ để tìm ra loại phù hợp nhất.
+                            </p>
+                            <a href="blog-detail.html" class="text-sm font-bold text-dark hover:text-brand transition mt-auto inline-flex items-center gap-1">
+                                Xem chi tiết <i class="fas fa-arrow-right text-xs"></i>
+                            </a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="flex justify-center mt-12 gap-3">
+                    <a href="blog.html" class="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-gray-200 text-gray-500 hover:border-brand hover:text-brand transition">
+                        <i class="fas fa-arrow-left"></i>
+                    </a>
+                    <a href="blog.html" class="w-10 h-10 rounded-xl flex items-center justify-center bg-white border border-brand/50 text-brand font-bold hover:bg-brand hover:text-white transition">1</a>
+                    <button class="w-10 h-10 rounded-xl flex items-center justify-center bg-[#3F2212] text-white font-bold shadow-md transform hover:-translate-y-1 transition">2</button>
+                </div>
+
+            </div>
+        </div>
+      </section>
+
+      <section class="container mx-auto px-6 mt-24">
+        <div class="bg-brandLight rounded-[2.5rem] p-8 md:p-12 text-center relative overflow-hidden border border-brand/10">
+          <div class="absolute -top-24 -left-24 w-64 h-64 bg-brand/10 rounded-full blur-3xl"></div>
+          <div class="absolute -bottom-24 -right-24 w-64 h-64 bg-accent/10 rounded-full blur-3xl"></div>
+          <div class="relative z-10 max-w-2xl mx-auto">
+            <i class="fas fa-envelope-open-text text-4xl text-brand mb-4"></i>
+            <h2 class="font-serif text-2xl md:text-3xl text-dark font-bold mb-3">Nhận tin tức & Ưu đãi mới nhất</h2>
+            <p class="text-gray-600 mb-6 text-sm">Đăng ký để không bỏ lỡ các bài viết hữu ích và voucher giảm giá độc quyền từ Paw Joy.</p>
+            <form class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+              <input type="email" placeholder="Nhập email của bạn..." class="flex-1 px-5 py-3 rounded-xl border border-brand/20 focus:ring-2 focus:ring-brand outline-none shadow-sm" required />
+              <button type="submit" class="px-6 py-3 bg-brand hover:bg-brandDark text-white font-bold rounded-xl transition shadow-lg text-sm">Đăng ký ngay</button>
+            </form>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-dark text-white/70 py-16 border-t border-white/5">
+        <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12 mb-12">
+          <div>
+            <a href="#" class="font-serif font-bold text-2xl text-white mb-6 block">Paw<span class="text-brand italic">Joy</span>.</a>
+            <p class="text-sm font-light leading-relaxed mb-6">
+              Hệ sinh thái chăm sóc thú cưng toàn diện. <br />
+              Nơi tình yêu thương được kết nối bằng công nghệ.<br />
+            </p>
+            <div class="flex gap-4">
+              <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand hover:text-white transition"><i class="fab fa-facebook-f"></i></a>
+              <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand hover:text-white transition"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center hover:bg-brand hover:text-white transition"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Khám phá</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-brand transition">Về chúng tôi</a></li>
+              <li><a href="#" class="hover:text-brand transition">Quy chế hoạt động</a></li>
+              <li><a href="#" class="hover:text-brand transition">Chính sách bảo mật</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Dịch vụ</h4>
+            <ul class="space-y-3 text-sm">
+              <li><a href="#" class="hover:text-brand transition">Spa & Grooming</a></li>
+              <li><a href="#" class="hover:text-brand transition">Thăm khám sức khỏe</a></li>
+              <li><a href="#" class="hover:text-brand transition">Tư vấn dinh dưỡng</a></li>
+            </ul>
+          </div>
+          <div>
+            <h4 class="text-white font-bold mb-6 text-sm uppercase tracking-widest">Liên hệ</h4>
+            <ul class="space-y-4 text-sm">
+              <li class="flex gap-3"><i class="fas fa-map-marker-alt text-brand mt-1"></i> 279 Nguyễn Tri Phương, Q.10</li>
+              <li class="flex gap-3"><i class="fas fa-phone text-brand mt-1"></i> 1900 6868 68</li>
+              <li class="flex gap-3"><i class="fas fa-envelope text-brand mt-1"></i> hello@pawjoy.vn</li>
+            </ul>
+          </div>
+        </div>
+        <div class="border-t border-white/5 pt-8 text-center text-xs">
+          &copy; 2025 Paw Joy Corp. Designed for Excellence.
+        </div>
+      </footer>
+    
+    <script src="js/script.js"></script>
+  </body>
+</html>```
